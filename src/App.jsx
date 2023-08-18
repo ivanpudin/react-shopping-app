@@ -1,11 +1,13 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 
 function App() {
   return (
-    <div className="justify-center items-center">
-      <header className="text-xl">
+    <div>
+      <header>
         Hello there!
       </header>
+      <Button variant='secondary'>Example button</Button>
     </div>
   );
 }
