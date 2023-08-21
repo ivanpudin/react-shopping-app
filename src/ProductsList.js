@@ -1,15 +1,16 @@
-import axios from "axios"
-const api = 'https://fakestoreapi.com/products/'
+import axios from "axios";
+import Product from "./Product";
+const api = 'https://fakestoreapi.com/products/';
 
-const products = await axios.get(api)
+const { data: products } = await axios.get(api)
 
 const ProductsList = () => {
 
-    console.log(products)
-
     return (
         <div>
-            <div>Products will be here</div>
+            {
+                Array.isArray(products) && products.map((product) => <Product key={product?.id} {...product} />) // ? - skip rendering if there is no such component
+            }
         </div>
     )
 }
