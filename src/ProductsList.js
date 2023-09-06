@@ -7,10 +7,13 @@ const { data: products } = await axios.get(api)
 const ProductsList = () => {
 
     return (
-        <div>
+        <div className="ProductsList">
+            <h1>Browse items</h1>
+            <div className="List">
             {
                 Array.isArray(products) && products.map((product) => <Product key={product?.id} {...product} />) // ? - skip rendering if there is no such component
             }
+            </div>
         </div>
     )
 }

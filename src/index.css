@@ -4,3 +4,40 @@
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
 }
+
+.Homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.Homepage p {
+  margin-top: 4rem;
+}
+
+.ProductsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.ProductsList h1 {
+  margin-bottom: 4rem;
+}
+
+.List {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Card {
+  width: 18rem;
+  margin: 1rem;
+  padding: 1rem;
+}
